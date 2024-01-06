@@ -1,0 +1,109 @@
+<!--display flex, justify ocntent center, align items center, height 100vh(vertical height)
+to align everything at center-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html{
+      background: black;
+    }
+    body {
+      font-family: 'Sono', sans-serif;
+    }
+    .plan-title{
+      font-size: 20px;
+      font-family:'Rubik Maps', system-ui;
+      text-align: center;
+    }
+    .pricing-plan>*{
+      text-align: center;
+    }
+    .plan-button{
+      background: red;
+      color: aliceblue;
+      height: 30px;
+      border-radius: 10%;
+      border: none;
+    }
+    .plan-price{
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 2rem;
+      margin: 10px;
+    }
+    .pricing-container{
+      display: flex;
+      height: 300px;
+      justify-content: center;
+      align-items: center;
+      height: 900px;
+      gap:20px;
+    }
+    .pricing-plan{
+      background: oldlace;
+      width: 300px;
+      max-width: 400px;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    li{
+      margin:10px;
+      list-style: none;
+    }
+    @media (max-width: 1250px) {
+      .pricing-container{
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
